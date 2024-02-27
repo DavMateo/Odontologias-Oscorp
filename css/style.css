@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    
+    & .navbar {
+        padding: .5rem 3rem;
+        border-radius: 0 0 1rem 1rem;
+        background-color: rgba(255, 255, 255, .75);
+        backdrop-filter: blur(6px);
+
+        & .navbar-brand {
+            & .navbar-item {
+                & .logoImg {
+                    max-height: 85px !important;
+                    border-radius: .725rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+.principal {
+    padding-top: 101px;
+
+
+    /* PÁGINA DE INICIO */
+    & .inicio {
+        display: flex;
+        height: calc(100vh - 101px);
+        padding: 3rem;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    
+        & .inicio_descripcion {
+            & .parrafoInicio {
+                margin-bottom: 1.25rem;
+                max-width: 30rem;
+            }
+    
+            & .btnCallAction {
+                padding: 0 2.45rem !important;
+                font-weight: bold;
+                letter-spacing: 1px;
+                position: relative;
+                z-index: 100 !important;
+                
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-color: rgba(72, 95, 199, .1);
+                    z-index: -10 !important;
+                }
+            }
+        }
+    
+        & .containerSvg {
+            & .decoracionSvg {
+                width: 425px;
+                height: 425px;
+            }
+        }
+    }
+
+
+    /* PÁGINA DE SERVICIOS */
+    & .servicios, .productos, .agendarCita, .contactar, .reportar {
+        display: flex;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+
+        & .servicios_img, .productos_img, .agendarCita_img, .contactar_img, .reportar_img {
+            min-width: 30rem;
+            height: 18rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 1rem;
+            box-shadow: 0 0 4px rgba(0, 0, 0, .65), 
+                        inset 0 0 8px 6px rgba(255, 255, 255, .15);
+            margin-right: 2rem;
+            margin-left: 3rem;
+        }
+
+        & .servicios_img {
+            background-image: url('./../img/imagen1.jpg');
+        }
+
+        & .productos_img {
+            background-image: url('./../img/imagen2.jpg');
+        }
+
+        & .agendarCita_img {
+            background-image: url('./../img/imagen3.png');
+        }
+
+        & .contactar_img {
+            background-image: url('./../img/imagen4.jpg');
+        }
+
+        & .reportar_img {
+            background-image: url('./../img/imagen5.jpg');
+        }
+
+        & .containerText {
+            margin-right: 3rem;
+            color: #fff;
+
+            & h2 {
+                color: #fff;
+            }
+
+            & .btnTarget {
+                display: flex;
+                margin-top: 1.25rem;
+                gap: 2.5rem;
+
+                & button {
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        background-color: rgba(255, 255, 255, .15);
+                    }
+                }
+            }
+        }
+    }
+
+    & .productos, .contactar {
+        & .containerText {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 0;
+            margin-left: 3rem;
+
+            & .parrafoproductos, .parrafoContactar {
+                text-align: right;
+            }
+        }
+    }
+
+    & .servicios, .productos, .agendarCita, .contactar, .reportar {
+        background-color: #022b3a;
+    }
+
+    & .servicios {
+        border-radius: 1.525rem 1.525rem 0 0;
+    }
+}

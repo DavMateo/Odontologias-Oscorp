@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+        <script src="./js/main.js" defer></script>
+        <script src="./js/burgerNavbar.js" defer></script>
+        <title>Odontología Oscorp | Página principal</title>
+    </head>
+
+    <body>
+        <header class="encabezado" id="encabezado">
+
+            <!-- Menú de navegación normal para PC y menú hamburguesa -->
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <img class="logoImg" src="./img/logo.jpeg" />
+                    </a>
+              
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+              
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item">Inicio</a>
+                        <a class="navbar-item">Servicios</a>
+              
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">Más</a>
+                
+                            <div class="navbar-dropdown">
+                                <a class="navbar-item">Productos</a>
+                                <a class="navbar-item">Agendar una cita</a>
+                                <a class="navbar-item">Contáctanos</a>
+
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">Reportar un inconveniente</a>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary"> <strong>Sign up</strong> </a>
+                                <a class="button is-light">Log in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="principal" id="principal">
+            <div id="inicio" class="inicio">
+                <div class="inicio_descripcion">
+                    <h1 class="title is-1">Title goes here</h1>
+                    <p class="parrafoInicio">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima blanditiis ipsa provident aperiam suscipit voluptatibus iure a, dolore 
+                        sapiente modi dicta voluptatem alias, incidunt velit? Ut voluptate ducimus necessitatibus deserunt. Lorem ipsum, dolor sit amet consectetur 
+                        adipisicing elit.
+                    </p>
+
+                    <button class="button is-link is-outlined is-medium btnCallAction">Let's Go!</button>
+                </div>
+
+                <div class="containerSvg">
+                    <svg id="sw-js-blob-svg" class="decoracionSvg" viewBox="9 8 73 73" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                                <stop id="stop1" stop-color="rgba(255, 116.668, 51.198, 1)" offset="0%"></stop>
+                                <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <path 
+                            fill="url(#sw-gradient)" d="M17,-22.7C22.3,-15.7,27.1,-10.7,29.8,-4C32.5,2.7,32.9,11,29.2,16.2C25.4,21.4,17.4,23.5,9.9,25.4C2.5,27.4,-4.4,29.2,-12.3,28.6C-20.2,28,-29.2,25,-34.6,18.6C-39.9,12.2,-41.6,2.3,-40,-7.1C-38.5,-16.6,-33.7,-25.5,-26.5,-32.1C-19.3,-38.8,-9.6,-43.1,-1.9,-40.8C5.8,-38.5,11.6,-29.7,17,-22.7Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <div id="servicios" class="servicios">
+                <div class="servicios_img"></div>
+                <div class="containerText">
+                    <h2 class="subtitle is-3">Subtitle here</h2>
+                    <p class="parrafoServicios">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum natus iusto aperiam voluptatibus 
+                        animi ratione obcaecati eveniet non, quidem illum explicabo reprehenderit, numquam esse dignissimos vitae 
+                        saepe? Deserunt, tempora? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quae illum at nulla 
+                        obcaecati suscipit. Cupiditate et dolorem quae molestiae velit quo, maiores a quaerat, enim voluptate magni 
+                        nobis soluta?
+                    </p>
+                    
+                    <div class="btnTarget">
+                        <button class="button is-success is-outlined">Click here</button>
+                        <button class="button is-info is-outlined">Click here</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="productos" class="productos">
+                <div class="containerText">
+                    <h2 class="subtitle is-3">Subtitle here</h2>
+                    <p class="parrafoproductos">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum natus iusto aperiam voluptatibus 
+                        animi ratione obcaecati eveniet non, quidem illum explicabo reprehenderit, numquam esse dignissimos vitae 
+                        saepe? Deserunt, tempora? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quae illum at nulla 
+                        obcaecati suscipit. Cupiditate et dolorem quae molestiae velit quo, maiores a quaerat, enim voluptate magni 
+                        nobis soluta?
+                    </p>
+                    
+                    <div class="btnTarget">
+                        <button class="button is-success is-outlined">Click here</button>
+                        <button class="button is-info is-outlined">Click here</button>
+                    </div>
+                </div>
+                <div class="productos_img"></div>
+            </div>
+
+            <div id="agendarCita" class="agendarCita">
+                <div class="agendarCita_img"></div>
+                <div class="containerText">
+                    <h2 class="subtitle is-3">Subtitle here</h2>
+                    <p class="parrafoAgendarCita">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum natus iusto aperiam voluptatibus 
+                        animi ratione obcaecati eveniet non, quidem illum explicabo reprehenderit, numquam esse dignissimos vitae 
+                        saepe? Deserunt, tempora? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quae illum at nulla 
+                        obcaecati suscipit. Cupiditate et dolorem quae molestiae velit quo, maiores a quaerat, enim voluptate magni 
+                        nobis soluta?
+                    </p>
+                    
+                    <div class="btnTarget">
+                        <button class="button is-success is-outlined">Click here</button>
+                        <button class="button is-info is-outlined">Click here</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contactar" class="contactar">
+                <div class="containerText">
+                    <h2 class="subtitle is-3">Subtitle here</h2>
+                    <p class="parrafoContactar">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum natus iusto aperiam voluptatibus 
+                        animi ratione obcaecati eveniet non, quidem illum explicabo reprehenderit, numquam esse dignissimos vitae 
+                        saepe? Deserunt, tempora? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quae illum at nulla 
+                        obcaecati suscipit. Cupiditate et dolorem quae molestiae velit quo, maiores a quaerat, enim voluptate magni 
+                        nobis soluta?
+                    </p>
+                    
+                    <div class="btnTarget">
+                        <button class="button is-success is-outlined">Click here</button>
+                        <button class="button is-info is-outlined">Click here</button>
+                    </div>
+                </div>
+                <div class="contactar_img"></div>
+            </div>
+
+            <div id="reportar" class="reportar">
+                <div class="reportar_img"></div>
+                <div class="containerText">
+                    <h2 class="subtitle is-3">Subtitle here</h2>
+                    <p class="parraforeportar">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolorum natus iusto aperiam voluptatibus 
+                        animi ratione obcaecati eveniet non, quidem illum explicabo reprehenderit, numquam esse dignissimos vitae 
+                        saepe? Deserunt, tempora? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure quae illum at nulla 
+                        obcaecati suscipit. Cupiditate et dolorem quae molestiae velit quo, maiores a quaerat, enim voluptate magni 
+                        nobis soluta?
+                    </p>
+                    
+                    <div class="btnTarget">
+                        <button class="button is-success is-outlined">Click here</button>
+                        <button class="button is-info is-outlined">Click here</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="pieDePagina" id="pieDePagina"></footer>
+
+
+
+        <!-- Archivos adicionales JS -->
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    </body>
+
+</html>
