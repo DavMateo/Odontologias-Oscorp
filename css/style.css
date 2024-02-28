@@ -79,8 +79,8 @@
     /* PÁGINA DE SERVICIOS */
     & .servicios, .productos, .agendarCita, .contactar, .reportar {
         display: flex;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 7rem;
+        
 
         & .servicios_img, .productos_img, .agendarCita_img, .contactar_img, .reportar_img {
             min-width: 30rem;
@@ -165,5 +165,9 @@
 
     & .servicios {
         border-radius: 1.525rem 1.525rem 0 0;
+    }
+
+    & .reportar {
+        padding-bottom: 5rem;
     }
 }
