@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in & Sign up Form</title>
+    <link rel="stylesheet" href="./../css/login.css" />
+    <script src="./../js/view/login/login.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="" autocomplete="off" class="sign-in-form" id="formSignIn" method="">
+                        <div class="logo">
+                            <img src="./../img/logo.jpeg" alt="OSCORP" />
+                            <h4>OSCORP</h4>
+                        </div>
+
+                        <div class="heading">
+                            <h2>Bienvenido</h2>
+                            <h6>¿No estás registrado?</h6>
+                            <a href="#" class="toggle">Regístrate</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" name="nombre" minlength="4" class="input-field" autocomplete="off"
+                                    required />
+                                <label>Nombre</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" name="contrasena" minlength="4" class="input-field"
+                                    autocomplete="off" required />
+                                <label>Contraseña</label>
+                            </div>
+
+                            <input type="button" value="Iniciar Sesión" class="sign-btn" id="signIn_btn"
+                                data-tipo="signIn" />
+
+                            <p class="text">
+                                ¿Olvidaste tu contraseña o la información de tu cuenta?
+                                <a href="#">Obten ayuda</a>.
+                            </p>
+                        </div>
+                    </form>
+
+                    <form action="" autocomplete="off" method="" class="sign-up-form" id="formSignUp"
+                        onreset="return false;">
+                        <div class="logo">
+                            <img src="./../img/logo.jpeg" alt="OSCORP" />
+                            <h4>OSCORP</h4>
+                        </div>
+
+                        <div class="heading">
+                            <h2>Crea tu cuenta</h2>
+                            <h6>¿Tienes una cuenta?</h6>
+                            <a href="#" class="toggle">Inicia sesión</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" name="nombreRegistro" minlength="4" class="input-field"
+                                    autocomplete="off" required />
+                                <label>Nombre</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="email" name="emailRegistro" class="input-field" autocomplete="off"
+                                    required />
+                                <label>Correo Electrónico</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" name="contrasenaRegistro" minlength="4" class="input-field"
+                                    autocomplete="off" required />
+                                <label>Contraseña</label>
+                            </div>
+
+                            <input type="button" value="Registrarse" class="sign-btn" id="signUp_btn"
+                                data-tipo="signUp" />
+
+                            <p class="text">
+                                Al crear tu cuenta, aceptas los
+                                <a href="#">Términos de servicio</a> y
+                                <a href="#">Políticas de privacidad</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="./../img/login/image1.png" class="image img-1 show" alt="" />
+                        <img src="./../img/login/image2.png" class="image img-2" alt="" />
+                        <img src="./../img/login/image3.png" class="image img-3" alt="" />
+                    </div>
+
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Gestiona tus consultas</h2>
+                                <h2>Tu información al instante</h2>
+                                <h2>Fácil de usar y minimalista</h2>
+                            </div>
+                        </div>
+
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
