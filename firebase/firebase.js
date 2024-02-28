@@ -33,21 +33,15 @@
 
   const db = getFirestore();
 
-  export const saveuser = (title, description) => {
-    addDoc(collection(db, 'users'), {title, description}) 
-    // console.log(title, description);
+
+  // Login
+  export const saveuser = (nameU, passU) => {
+    addDoc(collection(db, 'users'), {nameU, passU}) 
 
   }
 
   export const onGetusers = (callback) =>
   onSnapshot(collection(db, "users"), callback);
-
-/**
- *
- * @param {string} id user ID
- */
-
-export const deleteuser = (id) => deleteDoc(doc(db, "users", id));
 
 export const getuser = (id) => getDoc(doc(db, "users", id));
 
@@ -55,3 +49,20 @@ export const updateuser = (id, newFields) =>
   updateDoc(doc(db, "users", id), newFields);
 
 export const getusers = () => getDocs(collection(db, "users"));
+
+
+// Citas
+export const savecita = (nameU, passU) => {
+  addDoc(collection(db, 'citas'), {nameU, passU}) 
+
+}
+
+export const onGetcitas = (callback) =>
+onSnapshot(collection(db, "citas"), callback);
+
+export const getcita = (id) => getDoc(doc(db, "citas", id));
+
+export const updatecita = (id, newFields) =>
+updateDoc(doc(db, "citas", id), newFields);
+
+export const getcitas = () => getDocs(collection(db, "citas"));
