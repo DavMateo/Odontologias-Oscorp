@@ -6,10 +6,10 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./../css/agendarCitas.css" />
+        <link rel="stylesheet" href="./../css/agendarCitas.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-        <script src="./../js/view/agendarCitas/agendarCitas.js" type="module" defer></script>
-        <title>Odontología Oscorp | Agenda una cita</title>
+       
+        <title>Odontología Oscorp | Página principal</title>
     </head>
 
     <body>
@@ -18,7 +18,7 @@
             <!-- Menú de navegación normal para PC y menú hamburguesa -->
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="./../index.html">
+                    <a class="navbar-item" href="https://bulma.io">
                         <img class="logoImg" src="./../img/logo.jpeg" />
                     </a>
               
@@ -59,4 +59,103 @@
                 </div>
             </nav>
         </header>
+        
+        <div class="redactar">
+            <h2>Agenda Tu Cita</h2>
+            <p>Diligencia el formato con tus datos personales completos y reales, para que nuestros asesores te puedan contactar y así puedas descubrir el poder de tu sonrisa con nosotros.</p>
+        </div>
+
+
+        <div class="formulario">
+          <div class="field">
+                <label class="label">Nombres Y Apellidos</label>
+                <div class="control">
+                <input class="input" type="text" placeholder="">
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Telefono</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-success" type="number" placeholder="">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-success"></p>
+          </div>
+          
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input is-danger" type="email" placeholder="">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle"></i>
+              </span>
+            </div>
+            <p class="help is-danger"></p>
+          </div>
+          
+          <div class="field">
+            <label class="label">Tipo De Citas</label>
+            <div class="control">
+              <div class="select">
+                <select>
+                  <option>Seleccione Su Cita</option>
+                  <option>Extraccion De Muelas</option>
+                  <option>Sellantes</option>
+                  <option>Profilaxis</option>
+                  <option>Restauracion</option>
+                  <option>Radiografia</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <div class="field">
+            <label class="label">Mensaje Adicional</label>
+            <div class="control">
+              <textarea class="textarea" placeholder=""></textarea>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="checkbox">
+                <input type="checkbox">
+                I agree to the <a href="#">terms and conditions</a>
+              </label>
+            </div>
+          </div>
+          
+          <div class="field">
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="question">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="question">
+                No
+              </label>
+            </div>
+          </div>
+          
+          <div class="field is-grouped">
+            <div class="control">
+              <button class="button is-link">Submit</button>
+            </div>
+            <div class="control">
+              <button class="button is-link is-light">Cancel</button>
+            </div>
+          </div>
+        </div>
+            
+    </body>
 </html>
