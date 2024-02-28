@@ -33,25 +33,25 @@
 
   const db = getFirestore();
 
-  export const saveTask = (title, description) => {
-    addDoc(collection(db, 'tarea'), {title, description}) 
+  export const saveuser = (title, description) => {
+    addDoc(collection(db, 'users'), {title, description}) 
     // console.log(title, description);
 
   }
 
-  export const onGetTasks = (callback) =>
-  onSnapshot(collection(db, "tarea"), callback);
+  export const onGetusers = (callback) =>
+  onSnapshot(collection(db, "users"), callback);
 
 /**
  *
- * @param {string} id Task ID
+ * @param {string} id user ID
  */
 
-export const deleteTask = (id) => deleteDoc(doc(db, "tasks", id));
+export const deleteuser = (id) => deleteDoc(doc(db, "users", id));
 
-export const getTask = (id) => getDoc(doc(db, "tasks", id));
+export const getuser = (id) => getDoc(doc(db, "users", id));
 
-export const updateTask = (id, newFields) =>
-  updateDoc(doc(db, "tasks", id), newFields);
+export const updateuser = (id, newFields) =>
+  updateDoc(doc(db, "users", id), newFields);
 
-export const getTasks = () => getDocs(collection(db, "tasks"));
+export const getusers = () => getDocs(collection(db, "users"));
