@@ -66,3 +66,19 @@ export const updatecita = (id, newFields) =>
 updateDoc(doc(db, "citas", id), newFields);
 
 export const getcitas = () => getDocs(collection(db, "citas"));
+
+// Odontologos
+export const saveOdont = (nameU, telf, email, tipoOdont) => {
+  addDoc(collection(db, 'odontologos'), {nameU, telf, email, tipoOdont}) 
+
+}
+
+export const onGetOdonts = (callback) =>
+onSnapshot(collection(db, "odontologos"), callback);
+
+export const getOdont = (id) => getDoc(doc(db, "odontologos", id));
+
+export const updateOdont = (id, newFields) =>
+updateDoc(doc(db, "odontologos", id), newFields);
+
+export const getOdonts = () => getDocs(collection(db, "odontologos"));
