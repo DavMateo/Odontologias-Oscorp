@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+}
+
 .encabezado {
     position: fixed;
+    top: 0;
     width: 100%;
     z-index: 10000;
     
@@ -24,4 +33,30 @@
             }
         }
     }
+}
+
+.redactar{
+    max-width: 40rem;
+}
+
+.formulario{    
+    padding-top: 101px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    
+}
+
+.field.is-grouped{
+    /*display: flex;*/
+    /*justify-content: center;*/
+   /* align-items: center;*/
+}
+
+.control{
+    display: flex;
+    width: 500px;
 }
