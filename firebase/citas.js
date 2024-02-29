@@ -54,60 +54,60 @@ import {
     }
   });
 
-  window.addEventListener("DOMContentLoaded", async (e) => {
-    const querySnapshot = await getcitas();
-    querySnapshot.forEach((doc) => {
-      console.log(doc.data());
-    });
+  // window.addEventListener("DOMContentLoaded", async (e) => {
+  //   const querySnapshot = await getcitas();
+  //   querySnapshot.forEach((doc) => {
+  //     console.log(doc.data());
+  //   });
   
-    onGetcitas((querySnapshot) => {
-      citasContainer.innerHTML = "";
+  //   onGetcitas((querySnapshot) => {
+  //     citasContainer.innerHTML = "";
   
-      querySnapshot.forEach((doc) => {
-        const cita = doc.data();
+  //     querySnapshot.forEach((doc) => {
+  //       const cita = doc.data();
   
-        citasContainer.innerHTML += `
-        <div class="card card-body mt-2 border-primary">
-      <h3 class="h5">${cita.title}</h3>
-      <p>${cita.description}</p>
-      <div>
-        <button class="btn btn-primary btn-delete" data-id="${doc.id}">
-          🗑 Delete
-        </button>
-        <button class="btn btn-secondary btn-edit" data-id="${doc.id}">
-          🖉 Edit
-        </button>
-      </div>
-    </div>`;
-      });
+  //       citasContainer.innerHTML += `
+  //       <div class="card card-body mt-2 border-primary">
+  //     <h3 class="h5">${cita.title}</h3>
+  //     <p>${cita.description}</p>
+  //     <div>
+  //       <button class="btn btn-primary btn-delete" data-id="${doc.id}">
+  //         🗑 Delete
+  //       </button>
+  //       <button class="btn btn-secondary btn-edit" data-id="${doc.id}">
+  //         🖉 Edit
+  //       </button>
+  //     </div>
+  //   </div>`;
+  //     });
   
-      const btnsDelete = citasContainer.querySelectorAll(".btn-delete");
-      btnsDelete.forEach((btn) =>
-        btn.addEventListener("click", async ({ target: { dataset } }) => {
-          try {
-            await deletecita(dataset.id);
-          } catch (error) {
-            console.log(error);
-          }
-        })
-      );
+  //     const btnsDelete = citasContainer.querySelectorAll(".btn-delete");
+  //     btnsDelete.forEach((btn) =>
+  //       btn.addEventListener("click", async ({ target: { dataset } }) => {
+  //         try {
+  //           await deletecita(dataset.id);
+  //         } catch (error) {
+  //           console.log(error);
+  //         }
+  //       })
+  //     );
   
-      const btnsEdit = citasContainer.querySelectorAll(".btn-edit");
-      btnsEdit.forEach((btn) => {
-        btn.addEventListener("click", async (e) => {
-          try {
-            const doc = await getcita(e.target.dataset.id);
-            const cita = doc.data();
-            citaForm["cita-title"].value = cita.title;
-            citaForm["cita-description"].value = cita.description;
+  //     const btnsEdit = citasContainer.querySelectorAll(".btn-edit");
+  //     btnsEdit.forEach((btn) => {
+  //       btn.addEventListener("click", async (e) => {
+  //         try {
+  //           const doc = await getcita(e.target.dataset.id);
+  //           const cita = doc.data();
+  //           citaForm["cita-title"].value = cita.title;
+  //           citaForm["cita-description"].value = cita.description;
   
-            editStatus = true;
-            id = doc.id;
-            citaForm["btn-cita-form"].innerText = "Update";
-          } catch (error) {
-            console.log(error);
-          }
-        });
-      });
-    });
-  });
+  //           editStatus = true;
+  //           id = doc.id;
+  //           citaForm["btn-cita-form"].innerText = "Update";
+  //         } catch (error) {
+  //           console.log(error);
+  //         }
+  //       });
+  //     });
+  //   });
+  // });
