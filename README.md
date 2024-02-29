@@ -1,0 +1,15 @@
+# Odontología OSCORP  
+
+### Visión general del sitio web  
+
+Se diseñará un sitio web en el cuál, la primera vista será la **página principal** de la clínica odontológica con toda su respectiva información, la más importante, que busque impactar en el usuario que la visualice. Con ello, el diseño será **minimalista** y **llamativo**, con colores que recuerden a un servicio de salud médico, fuente de letras agradables al usuario, no tan cuadradas sino más bien, letras más redondeadas y suaves en sus esquinas. Este diseño se aplicará de manera global, a todas las páginas web vinculadas entre sí.  
+
+Tendrá una sección dedicada para mostrar todos los **servicios ofrecidos por la odontológica**, con una breve descripción sobre el oficio ofrecido e imagen, en una tarjeta. Esto puede ir en dos secciones, directamente dentro de la página principal donde se visualiza toda la información de la clínica o bien, en una página web aparte que, al dar clic en un link dentro de la página principal, dirija a dicha web.    
+
+El sitio web manejará también una funcionalidad importante para su correcto funcionamiento. Administrará todo el tema de **registros de los usuarios**. Un usuario puede ser un **paciente** o un **profesional de la salud**, por lo tanto, se debe gestionar durante el registro del nuevo perfil si corresponde a alguna de las dos categorías mencionadas anteriormente y así mismo generar su perfil al finalizar el formulario con la información previamente suministrada. Esta opción puede manifestarse mediante un botón o menú accesible desde la página web principal. Puede mostrarse dentro de la misma página web tener su web dedicada para esta funcionalidad. Lo importante es que el usuario se sienta **cómodo** usando el sitio web, por ende, lo mejor sería implementarlo dentro de la misma página principal. Lo anterior es con el objetivo de que una persona pueda ingresar al sistema en la **menor cantidad de clicks posible**.  
+
+Para el **perfil del paciente**, se le pedirá toda la información personal y médica necesaria  (nombre completo, cumpleaños (de ahí se deduce la edad), género, estado civil, dirección de residencia, teléfono fijo, número de celular, correo electrónico, historia médica (alergias, enfermedades / diagnósticos, cirugías realizadas, medicamentos, notas adicionales) ). Le permitirá cargar una fotografía personalizada de la galería del usuario.  
+
+Para el **perfil del médico**, se le pedirá toda la información personal y médica, similar al perfil del paciente, agregando más campos importantes respecto a su formación y especialidad que demuestren su experiencia en el área (Estudio superior con su respectiva certificación (puede ser más de uno) y donde ha trabajado).  
+
+El sitio web debe ser **responsivo** tanto para teléfonos móviles como para tablets y computadoras.  

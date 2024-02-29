@@ -10,6 +10,7 @@ body{
     justify-content: space-evenly;
     height: 100vh;
     width: 100vw;
+    margin-bottom: 6.25rem !important;
 }
 
 .encabezado {
@@ -38,24 +39,41 @@ body{
 .redactar{
     max-width: 40rem;
     padding: 1px;
+    padding-top: calc(6.25rem / 2);
+    margin: auto 0;
     text-align: center;
     font-size: large;
 }
 
 .formulario{    
-    padding-top: 101px;
+    padding-top: 12.5rem;
 }
 
-.field{
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    appearance: none;
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+input[type=number] { 
+    appearance: textfield;
+    -moz-appearance:textfield;
+}
+
+.field {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     justify-content: center;
-    
 }
 
+.fieldBtn {
+    flex-direction: row;
+    justify-content: center !important;
+    margin-top: 2.225rem;
+    gap: 1rem;
+}
 
-
-.control{
-    display: flex;
-    width: 500px;
+.certificados {
+    justify-content: center !important;
 }

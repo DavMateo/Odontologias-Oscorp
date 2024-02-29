@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    
+    & .navbar {
+        padding: .5rem 3rem;
+        border-radius: 0 0 1rem 1rem;
+        background-color: rgba(255, 255, 255, .75);
+        backdrop-filter: blur(6px);
+
+        & .navbar-brand {
+            & .navbar-item {
+                & .logoImg {
+                    max-height: 85px !important;
+                    border-radius: .725rem;
+                }
+            }
+        }
+    }
+}
+
+
+.principal {
+    padding-top: 12.5rem;
+    margin: 0 3rem;
+}
