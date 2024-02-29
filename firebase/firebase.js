@@ -52,8 +52,8 @@ export const getusers = () => getDocs(collection(db, "users"));
 
 
 // Citas
-export const savecita = (nameU, passU) => {
-  addDoc(collection(db, 'citas'), {nameU, passU}) 
+export const savecita = (nameU, telf, email, tipoCita, mensaje) => {
+  addDoc(collection(db, 'citas'), {nameU, telf, email, tipoCita, mensaje}) 
 
 }
 
