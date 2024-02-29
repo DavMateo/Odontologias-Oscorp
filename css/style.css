@@ -195,6 +195,7 @@
             border-radius: 1.2125rem;
             box-shadow: 0 0 4px rgba(0, 0, 0, .65),
             inset 0 0 8px 6px rgba(255, 255, 255, .15);
+            margin-top: 100px;
 
             &:nth-child(1) {
                 margin-right: 1rem;
@@ -222,6 +223,17 @@
             border-radius: .5rem;
         }
     }
+}
+
+.nombreproducto{
+    text-align: center;
+}
+
+#botonproducto{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto;
 }
 
 @media(max-width:320px){
