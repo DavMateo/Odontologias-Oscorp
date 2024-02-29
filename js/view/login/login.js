@@ -5,6 +5,7 @@ const bullets = document.querySelectorAll(".bullets span");
 const images = document.querySelectorAll(".image");
 const formSignIn = document.getElementById("formSignIn");
 const formSignUp = document.getElementById("formSignUp");
+const signIn_btn = document.getElementById("signIn_btn");
 
 
 
@@ -37,3 +38,6 @@ toggle_btn.forEach((btn) => {
 });
   
 bullets.forEach((bullet) => bullet.addEventListener("click", moveSlider));
+
+
+signIn_btn.addEventListener("click", () => location.href = "./perfilPaciente.html");
