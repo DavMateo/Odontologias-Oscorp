@@ -37,6 +37,9 @@ body{
 
 .redactar{
     max-width: 40rem;
+    padding: 1px;
+    text-align: center;
+    font-size: large;
 }
 
 .formulario{    
