@@ -60,6 +60,8 @@ export const savecita = (nameU, telf, email, tipoCita, mensaje) => {
 export const onGetcitas = (callback) =>
 onSnapshot(collection(db, "citas"), callback);
 
+export const deletecita = (id) => deleteDoc(doc(db, "citas", id));
+
 export const getcita = (id) => getDoc(doc(db, "citas", id));
 
 export const updatecita = (id, newFields) =>
