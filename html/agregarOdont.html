@@ -2,152 +2,155 @@
 
 <html lang="es">
 
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./../css/agendarCitas.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-       
-        <title>Odontología Oscorp | Página principal</title>
-        <script type="module" src="../firebase/odontologos.js"></script>
-    </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./../css/agendarCitas.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
 
-    <body>
-        <header class="encabezado" id="encabezado">
+  <title>Odontología Oscorp | Página principal</title>
+  <script type="module" src="../firebase/odontologos.js"></script>
+</head>
 
-            <!-- Menú de navegación normal para PC y menú hamburguesa -->
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div class="navbar-brand">
-                    <a class="navbar-item"  href="./../index.html">
-                        <img class="logoImg"  src="./../img/logo.jpeg" />
-                    </a>
-              
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-              
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <div class="navbar-start">
-                        <a class="navbar-item" href="./../index.html">Inicio</a>
-              
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <a class="navbar-link">Más</a>
-                
-                            <div class="navbar-dropdown">
-                                <a class="navbar-item" href="./../html/producto.html">Productos</a>
-                                <a class="navbar-item" href="./agendarCitas.html">Agendar una cita</a>
-                                <a class="navbar-item" href="./agregarOdont.html">Agregar Odontologo</a>
-                                <a class="navbar-item" href="#">Contáctanos</a>
+<body>
+  <header class="encabezado" id="encabezado">
 
-                                <hr class="navbar-divider">
-                                <a class="navbar-item" href="#">Reportar un inconveniente</a>
-                            </div>
-                        </div>
-                    </div>
-              
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="buttons">
-                                <a class="button is-primary" href="./registro.html"> <strong>Sign up</strong> </a>
-                                <a class="button is-light" href="./login.html">Log in</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        
-        <div class="redactar">
-            <h2>Agregar Odontologo</h2>
-            <p>Diligencia el formato con los datos personales completos y reales del odontologo, para que nuestros asesores lo puedan contactar y así puedas descubrir el poder de tu sonrisa con nosotros.</p>
-        </div>
+    <!-- Menú de navegación normal para PC y menú hamburguesa -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./../index.html">
+          <img class="logoImg" src="./../img/logo.jpeg" />
+        </a>
 
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
 
-        <div class="formulario">
-          <form id="formu">
-            <div class="field">
-              <label class="label">Nombres Y Apellidos</label>
-              <div class="control">
-              <input class="input" id="nombre" type="text" placeholder="">
-          </div>
-        </div>
-        
-        <div class="field">
-          <label class="label">Telefono</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" id="telefono" type="number" placeholder="">
-            <span class="icon is-small is-left">
-              <i class="fas fa-user"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-          <p class="help is-success"></p>
-        </div>
-        
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" id="email" type="email" placeholder="">
-            <span class="icon is-small is-left">
-              <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-              <i class="fas fa-exclamation-triangle"></i>
-            </span>
-          </div>
-          <p class="help is-danger"></p>
-        </div>
-        
-        <div class="field">
-          <label class="label">Tipo De Especialidad</label>
-          <div class="control">
-            <div class="select">
-              <select id="opciones">
-                <option>Seleccione especialidad</option>
-                <option>Ortodoncia</option>
-                <option>Periodoncia</option>
-                <option>Implantología</option>
-                <option>Odontología Estetica</option>
-              </select>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./../index.html#principal">Inicio</a>
+          <a class="navbar-item" href="./../index.html#servicios">Servicios</a>
+          <a class="navbar-item" href="./../index.html#productos">Productos</a>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Más</a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./../html/producto.html">Productos</a>
+              <a class="navbar-item" href="./agendarCitas.html">Agendar una cita</a>
+              <a class="navbar-item" href="./agregarOdont.html">Agregar Odontologo</a>
+              <a class="navbar-item" href="#">Contáctanos</a>
+
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="#">Reportar un inconveniente</a>
             </div>
           </div>
         </div>
-        <br>
-        <label class="label">Certificados</label>
-        <div class="file has-name is-boxed">
-            <label class="file-label">
-              <input class="file-input" type="file" name="resume">
-              <span class="file-cta">
-                <span class="file-icon">
-                  <i class="fas fa-upload"></i>
-                </span>
-                <span class="file-label">
-                  cargar archivo...
-                </span>
-              </span>
-              <span class="file-name">
-                Screen Shot 2017-07-29 at 15.54.25.png
-              </span>
-            </label>
-          </div>
-        <br><br>
-        <div class="field is-grouped">
-          <div class="control">
-            <button id="boton1" class="button is-link">Agregar</button>
-          </div>
-          <div class="control">
-            <button id="boton2" class="button is-link is-light">Cancelar</button>
+
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary" href="./login.html"> <strong>Sign up</strong> </a>
+            </div>
           </div>
         </div>
-          </form>
-         
+      </div>
+    </nav>
+  </header>
+
+  <div class="redactar">
+    <h2 class="subtitle is-2">Agregar Odontologo</h2>
+    <p>Diligencia el formato con los datos personales completos y reales del odontologo, para que nuestros asesores lo
+      puedan contactar y así puedas descubrir el poder de tu sonrisa con nosotros.</p>
+  </div>
+
+
+  <div class="formulario">
+    <form id="formu">
+      <div class="field">
+        <label class="label">Nombres Y Apellidos</label>
+        <div class="control">
+          <input class="input" id="nombre" type="text" placeholder="">
         </div>
-            
-    </body>
+      </div>
+
+      <div class="field">
+        <label class="label">Telefono</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" id="telefono" type="number" min="1" placeholder="">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <p class="help is-success"></p>
+      </div>
+
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" id="email" type="email" placeholder="example@domain.com">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger"></p>
+      </div>
+
+      <div class="field">
+        <label class="label">Tipo De Especialidad</label>
+        <div class="control">
+          <div class="select">
+            <select id="opciones">
+              <option>Seleccione especialidad</option>
+              <option>Ortodoncia</option>
+              <option>Periodoncia</option>
+              <option>Implantología</option>
+              <option>Odontología Estetica</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <br>
+      <label class="label">Certificados</label>
+      <div class="file has-name is-boxed certificados">
+        <label class="file-label">
+          <input class="file-input" type="file" name="resume">
+          <span class="file-cta">
+            <span class="file-icon">
+              <i class="fas fa-upload"></i>
+            </span>
+            <span class="file-label">
+              cargar archivo...
+            </span>
+          </span>
+          <span class="file-name">
+            Screen Shot 2017-07-29 at 15.54.25.png
+          </span>
+        </label>
+      </div>
+      
+      <div class="field is-grouped fieldBtn">
+        <div class="control">
+          <button id="boton1" class="button is-link">Agregar</button>
+        </div>
+        <div class="control">
+          <button id="boton2" class="button is-link is-light">Cancelar</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+</body>
+
 </html>
